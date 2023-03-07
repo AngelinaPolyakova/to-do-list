@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  background-color: #C7D288;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+h1 {
+  color: #5E6B13;
+}
+
+#input {
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px solid #737C40;
+  border-radius: 7px;
+  padding: 5px;
+  width: 50%;
+}
+#input:focus-visible {
+  outline: none;
+  border: 3px solid #737C40;
+}
+
+#list {
+  color: #5E6B13;
+  font-size: 25px;
+  line-height: 35px;
+  padding: 0;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.li {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.new-do {
+  position: relative;
+}
+.new-do::before {
+  content: "★";
+  position: absolute;
+  left: -25px;
+}
+
+.remove, .done, .edit {
+  font-size: 14px;
+  line-height: 14px;
+  color: #737C40;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: font-size 500ms;
+  padding-top: 5px;
+}
+.remove:hover, .done:hover, .edit:hover {
+  font-size: 16px;
+  transition: all 500ms;
+}
+
+.done-through {
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */
